@@ -1,1 +1,15 @@
-{"image":"mcr.microsoft.com/devcontainers/universal:2"}
+{
+    "name": "C# (.NET)",
+    "image":"mcr.microsoft.com/devcontainers/dotnet:8.0",
+    "customizations": {
+        "vscode": {
+          // Add the IDs of extensions you want installed when the container is created.
+          "extensions": [
+            "ms-dotnettools.csharp",
+            "mhutchie.git-graph",
+            "streetsidesoftware.code-spell-checker"
+          ]
+        }
+      },
+      "remoteUser": "vscode"
+}
